@@ -6,5 +6,5 @@
 
 data=list(map(int,input('Введите список целых чисел в одну строчку через пробел:').split()))
 print(data)
-twoDigit=list(filter(lambda x:x>9 and x<100,data))
+twoDigit=filter(lambda x:x>9 and x<100,data)
 print(*twoDigit)
